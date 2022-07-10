@@ -133,6 +133,30 @@ h3 {
     text-align: center;
     line-height: 1.2rem;
 }
+/* Graphics */
+.graphic {
+    min-height: 30rem;
+    grid-column: 1 / 3;
+}
+
+.graphic--tshirts {
+    background-image: url(../img/grafico1.jpg);
+    grid-row: 2 / 3;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.graphic--node {
+    background-image: url(../img/grafico2.jpg);
+    grid-row: 8 / 9;
+}
+
+@media (min-width: 768px) {
+    .graphic--node {
+        grid-row: 5 / 6;
+        grid-column: 2 / 4;
+    }
+}
 
 .footer {
     background-color: var(--primarioOscuro);
