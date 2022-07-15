@@ -182,6 +182,33 @@ h3 {
     }
 }
 
+/* Blocks */
+.blocks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .blocks {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+}
+
+.block {
+    text-align: center;
+}
+
+.block__image {
+    width: 100%;
+}
+
+.block__title {
+    margin: 0;
+}
+
 .footer {
     background-color: var(--primarioOscuro);
     padding: 1rem 0;
